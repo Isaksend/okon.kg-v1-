@@ -1,0 +1,329 @@
+@darkBlue: #022279;
+@lightGreen: #378D93;
+@lightBlue: #E0F1F2;
+@BasicFont: "Montserrat","san-serif";
+*{
+    border: red 1px solid;
+}
+body{
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: @lightBlue;
+    header{
+        margin: 25px 16.82291%;
+        .logo{
+            display: flex;
+            .logoName{
+                font-family: @BasicFont;
+                padding: 1.25rem .438rem;
+                font-size: 1rem;
+            }
+            .BorderItem{
+                border-left: 1px solid black;
+                height: 60px; 
+                width: 0;
+            }
+            .DescriptLogo{
+                font-size: 1rem;
+                font-family: @BasicFont;
+                padding: .625rem;
+                width: 11rem;
+            }
+        }
+        .headPart{
+            display: flex;
+        }
+        .InfoWork{
+            margin-left: 7.43%;
+            .locationData, .timeData{
+                display: flex;
+                .locationDescript,.timeDescript{
+                    font-family: @BasicFont;
+                    padding: 0.313rem;
+                    font-size: 1rem;
+                    font-weight: 500;
+                }
+            }
+        }
+        .phoneNumber{
+            margin-left: 10%;
+            padding: .938rem 0;
+            a{
+                font-size: 1.5rem;
+                font-family: @BasicFont;
+                color: black;
+            }
+        }
+        .btnCallMe{
+            right: 0;
+            margin-left: 2.65%;
+            .btnCall{
+                background-color: @lightGreen;
+                padding: 1.25rem 3.125rem;
+                display: flex;
+                color: @lightBlue;
+                font-weight: 600;
+                border: 0;
+                font-family: @BasicFont;
+            }
+        }
+        .MenuNav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 3.125rem 0;
+
+            .navItem{
+                a{
+                    text-decoration: none;
+                    font-family: @BasicFont;
+                    color: black;
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    main{
+        .frontBlock{
+            background-image: url("../asset/background/okonBackground.png");
+            width: 100%;
+            max-width: 100%;
+            height: 67.5rem;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding-top: 3.438rem;
+            .titleBlock{
+                background-color: rgba(217, 217, 217, .75);
+                margin-left: 16.82%;
+                width: 35.56%;
+                height: 28rem;
+                font-family: @BasicFont;
+                padding-left: 3.1229%;
+                padding-top: 2.5rem;
+                .titleText{
+                    color: black;
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                }
+                .cityName{
+                    background-color: @lightGreen;
+                    padding: .5rem 2.25rem;
+                    font-size: 3rem;
+                    color: white;
+                    font-weight: bold;
+                    margin-top: .813rem;
+                    max-width: 18rem;
+                }
+                .descriptionBlock{
+                    font-size: 1.25rem;
+                    font-weight: 400;
+                    margin-top: 3rem;
+                    width: 66%;
+                }
+                .callBtn{
+                    padding: 1.75rem 2.5rem;
+                    background-color: @darkBlue;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                    width: 17.5rem;
+                    margin-top: 2.5rem;
+                    border: none;
+                    display: flex;
+                }
+            }
+        }
+        .ourServiceBlock{
+            margin-top: 3rem;
+            .ServiceBlockName{
+                color: black;
+                font-size: 2.25rem;
+                font-family: @BasicFont;
+                font-weight: 600;
+                text-align: center;
+            }
+            .serviceGroup{
+                margin: 5rem 16.82%;
+                display: grid; 
+                grid-template-columns: 49.25% 49.25%; 
+                grid-template-rows: 300px 300px 300px; 
+                gap: 1.25rem 1.25rem; 
+                grid-template-areas: 
+                    ". ."
+                    ". ."
+                    ". .";
+                .serviceItem,.serviceItemSmall{
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    display: flex;
+                    justify-content: space-between;
+                    
+                }
+                .serviceItemSmall{
+                    display: block;
+                }
+                .mosquitoInnerNets{
+                    background-image: url("../asset/services/serviceItem1.png");
+                }
+                .mosquitoSlidingNets{
+                    background-image: url("../asset/services/serviceItem2.png");
+                    .ServiceName{
+                        width: 20rem;
+                    }
+                }
+                .eliminationOfWindow{
+                    background-image: url("../asset/services/serviceItem3.png");
+                }
+                .serviceSmallBlock{
+                    display: grid;
+                    grid-template-columns: 48% 48%;
+                    gap: 0 4%;
+                }
+                .regulateWindow{
+                    background-image: url("../asset/services/serviceItem4.png");
+                    .ServiceName{
+                        width: 13rem;
+                    }
+                }
+                .insulationWindow{
+                    background-image: url("../asset/services/serviceItem5.png");
+                    .ServiceName{
+                        width: 12rem;
+                    }
+                }
+                .repairFurniture{
+                    background-image: url("../asset/services/serviceItem6.png");
+                }
+                .replaceTheSeal{
+                    background-image: url("../asset/services/serviceItem7.png");
+                }
+                .replaceDoubleGlazedWindow{
+                    background-image: url("../asset/services/serviceItem8.png");
+                }
+                .ServiceName{
+                    font-family: @BasicFont;
+                    font-size: 1.5rem;
+                    color: #fff;
+                    font-weight: 500;
+                    width: 15rem;
+                    margin-left: 1.563rem;
+                    margin-top: 35%;
+                }
+                .ServiceReadLinkOut{
+                    margin-top: 40%;
+                }
+                .ServiceReadLink{
+                    background-color: @lightGreen;
+                    padding: .5rem 1.375rem;
+                    text-decoration: none;
+                    color: black;
+                    font-family: @BasicFont;
+                    margin-right: 1rem;
+                    border-radius: 5px;
+                }
+                .serviceItemSmall{
+                    .ServiceName{
+                        margin-top: 60%;
+                    }
+                    .ServiceReadLinkOut{
+                        margin-top: 5%;
+                        margin-left: 1.563rem;
+                    }
+                }
+            }
+        }
+        .repairBlock{
+            margin: 3.125rem 16.82%;
+            .repairBlockName{
+                text-align: center;
+                font-size: 2.25rem;
+                font-family: @BasicFont;
+                color: black;
+                font-weight: 600;
+            }
+            .repairService{
+                margin-top: 3.5rem;
+                display: grid;
+                grid-template-columns: 49.3% 49.3%; 
+                grid-template-rows: 300px; 
+                gap: 0px 1.4%; 
+                .repairNum1{
+                    background-image: url("../asset/services/serviceRepair1.png");
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                }
+                .repairNum2{
+                    background-image: url("../asset/services/serviceRepair2.png");
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                }
+                .repairItem{
+                    .repairText{
+                        font-size: 2.25rem;
+                        font-family: @BasicFont;
+                        color: #fff;
+                        font-weight: 500;
+                        width: 5rem;
+                        margin-left: 1.875rem;
+                        margin-top: 24%;
+                    }
+                }
+            }
+        }
+        .accessoriesBlock{
+            margin-top: 3.125rem;
+            .accessoriesTitleName{
+                font-family: @BasicFont;
+                color: black;
+                font-size: 2.25rem;
+                text-align: center;
+                font-weight: 600;
+            }
+            .accessoriesList{
+                margin: 3.125rem 16.82%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .downImgItem{
+                    margin-top: 25%;
+                }
+                .ItemNameOut1{
+                    padding-top: 18%;
+                }
+
+                .ItemNameOut2{
+                    padding-top: 16%;
+                }
+                .ItemNameOut3{
+                    padding-top: 35%;
+                }
+                .ItemNameOut4{
+                    padding-top: 19%;
+                }
+                .ItemNameOut5{
+                    padding-top: 17%;
+                }
+                .ItemNameOut6{
+                    padding-top: 50%;
+                }
+                .ItemName{
+                    display: grid;
+                    text-align: center;
+                    align-items: center;
+                    font-size: 1.25rem;
+                    font-family: @BasicFont;
+                    font-weight: 400;
+                    color: @darkBlue;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,316 @@
+* {
+  border: red 1px solid;
+}
+body {
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #e0f1f2;
+}
+body header {
+  margin: 25px 16.82291%;
+}
+body header .logo {
+  display: flex;
+}
+body header .logo .logoName {
+  font-family: "Montserrat", "san-serif";
+  padding: 1.25rem .438rem;
+  font-size: 1rem;
+}
+body header .logo .BorderItem {
+  border-left: 1px solid black;
+  height: 60px;
+  width: 0;
+}
+body header .logo .DescriptLogo {
+  font-size: 1rem;
+  font-family: "Montserrat", "san-serif";
+  padding: .625rem;
+  width: 11rem;
+}
+body header .headPart {
+  display: flex;
+}
+body header .InfoWork {
+  margin-left: 7.43%;
+}
+body header .InfoWork .locationData,
+body header .InfoWork .timeData {
+  display: flex;
+}
+body header .InfoWork .locationData .locationDescript,
+body header .InfoWork .timeData .locationDescript,
+body header .InfoWork .locationData .timeDescript,
+body header .InfoWork .timeData .timeDescript {
+  font-family: "Montserrat", "san-serif";
+  padding: 0.313rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+body header .phoneNumber {
+  margin-left: 10%;
+  padding: .938rem 0;
+}
+body header .phoneNumber a {
+  font-size: 1.5rem;
+  font-family: "Montserrat", "san-serif";
+  color: black;
+}
+body header .btnCallMe {
+  right: 0;
+  margin-left: 2.65%;
+}
+body header .btnCallMe .btnCall {
+  background-color: #378d93;
+  padding: 1.25rem 3.125rem;
+  display: flex;
+  color: #e0f1f2;
+  font-weight: 600;
+  border: 0;
+  font-family: "Montserrat", "san-serif";
+}
+body header .MenuNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3.125rem 0;
+}
+body header .MenuNav .navItem a {
+  text-decoration: none;
+  font-family: "Montserrat", "san-serif";
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+body main .frontBlock {
+  background-image: url("../asset/background/okonBackground.png");
+  width: 100%;
+  max-width: 100%;
+  height: 67.5rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 3.438rem;
+}
+body main .frontBlock .titleBlock {
+  background-color: rgba(217, 217, 217, 0.75);
+  margin-left: 16.82%;
+  width: 35.56%;
+  height: 28rem;
+  font-family: "Montserrat", "san-serif";
+  padding-left: 3.1229%;
+  padding-top: 2.5rem;
+}
+body main .frontBlock .titleBlock .titleText {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+body main .frontBlock .titleBlock .cityName {
+  background-color: #378d93;
+  padding: .5rem 2.25rem;
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+  margin-top: .813rem;
+  max-width: 18rem;
+}
+body main .frontBlock .titleBlock .descriptionBlock {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 3rem;
+  width: 66%;
+}
+body main .frontBlock .titleBlock .callBtn {
+  padding: 1.75rem 2.5rem;
+  background-color: #022279;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 17.5rem;
+  margin-top: 2.5rem;
+  border: none;
+  display: flex;
+}
+body main .ourServiceBlock {
+  margin-top: 3rem;
+}
+body main .ourServiceBlock .ServiceBlockName {
+  color: black;
+  font-size: 2.25rem;
+  font-family: "Montserrat", "san-serif";
+  font-weight: 600;
+  text-align: center;
+}
+body main .ourServiceBlock .serviceGroup {
+  margin: 5rem 16.82%;
+  display: grid;
+  grid-template-columns: 49.25% 49.25%;
+  grid-template-rows: 300px 300px 300px;
+  gap: 1.25rem 1.25rem;
+  grid-template-areas: ". ." ". ." ". .";
+}
+body main .ourServiceBlock .serviceGroup .serviceItem,
+body main .ourServiceBlock .serviceGroup .serviceItemSmall {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+}
+body main .ourServiceBlock .serviceGroup .serviceItemSmall {
+  display: block;
+}
+body main .ourServiceBlock .serviceGroup .mosquitoInnerNets {
+  background-image: url("../asset/services/serviceItem1.png");
+}
+body main .ourServiceBlock .serviceGroup .mosquitoSlidingNets {
+  background-image: url("../asset/services/serviceItem2.png");
+}
+body main .ourServiceBlock .serviceGroup .mosquitoSlidingNets .ServiceName {
+  width: 20rem;
+}
+body main .ourServiceBlock .serviceGroup .eliminationOfWindow {
+  background-image: url("../asset/services/serviceItem3.png");
+}
+body main .ourServiceBlock .serviceGroup .serviceSmallBlock {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  gap: 0 4%;
+}
+body main .ourServiceBlock .serviceGroup .regulateWindow {
+  background-image: url("../asset/services/serviceItem4.png");
+}
+body main .ourServiceBlock .serviceGroup .regulateWindow .ServiceName {
+  width: 13rem;
+}
+body main .ourServiceBlock .serviceGroup .insulationWindow {
+  background-image: url("../asset/services/serviceItem5.png");
+}
+body main .ourServiceBlock .serviceGroup .insulationWindow .ServiceName {
+  width: 12rem;
+}
+body main .ourServiceBlock .serviceGroup .repairFurniture {
+  background-image: url("../asset/services/serviceItem6.png");
+}
+body main .ourServiceBlock .serviceGroup .replaceTheSeal {
+  background-image: url("../asset/services/serviceItem7.png");
+}
+body main .ourServiceBlock .serviceGroup .replaceDoubleGlazedWindow {
+  background-image: url("../asset/services/serviceItem8.png");
+}
+body main .ourServiceBlock .serviceGroup .ServiceName {
+  font-family: "Montserrat", "san-serif";
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 500;
+  width: 15rem;
+  margin-left: 1.563rem;
+  margin-top: 35%;
+}
+body main .ourServiceBlock .serviceGroup .ServiceReadLinkOut {
+  margin-top: 40%;
+}
+body main .ourServiceBlock .serviceGroup .ServiceReadLink {
+  background-color: #378d93;
+  padding: .5rem 1.375rem;
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", "san-serif";
+  margin-right: 1rem;
+  border-radius: 5px;
+}
+body main .ourServiceBlock .serviceGroup .serviceItemSmall .ServiceName {
+  margin-top: 60%;
+}
+body main .ourServiceBlock .serviceGroup .serviceItemSmall .ServiceReadLinkOut {
+  margin-top: 5%;
+  margin-left: 1.563rem;
+}
+body main .repairBlock {
+  margin: 3.125rem 16.82%;
+}
+body main .repairBlock .repairBlockName {
+  text-align: center;
+  font-size: 2.25rem;
+  font-family: "Montserrat", "san-serif";
+  color: black;
+  font-weight: 600;
+}
+body main .repairBlock .repairService {
+  margin-top: 3.5rem;
+  display: grid;
+  grid-template-columns: 49.3% 49.3%;
+  grid-template-rows: 300px;
+  gap: 0px 1.4%;
+}
+body main .repairBlock .repairService .repairNum1 {
+  background-image: url("../asset/services/serviceRepair1.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+body main .repairBlock .repairService .repairNum2 {
+  background-image: url("../asset/services/serviceRepair2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+body main .repairBlock .repairService .repairItem .repairText {
+  font-size: 2.25rem;
+  font-family: "Montserrat", "san-serif";
+  color: #fff;
+  font-weight: 500;
+  width: 5rem;
+  margin-left: 1.875rem;
+  margin-top: 24%;
+}
+body main .accessoriesBlock {
+  margin-top: 3.125rem;
+}
+body main .accessoriesBlock .accessoriesTitleName {
+  font-family: "Montserrat", "san-serif";
+  color: black;
+  font-size: 2.25rem;
+  text-align: center;
+  font-weight: 600;
+}
+body main .accessoriesBlock .accessoriesList {
+  margin: 3.125rem 16.82%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body main .accessoriesBlock .accessoriesList .downImgItem {
+  margin-top: 25%;
+}
+body main .accessoriesBlock .accessoriesList .ItemNameOut1 {
+  padding-top: 18%;
+}
+body main .accessoriesBlock .accessoriesList .ItemNameOut2 {
+  padding-top: 16%;
+}
+body main .accessoriesBlock .accessoriesList .ItemNameOut3 {
+  padding-top: 35%;
+}
+body main .accessoriesBlock .accessoriesList .ItemNameOut4 {
+  padding-top: 19%;
+}
+body main .accessoriesBlock .accessoriesList .ItemNameOut5 {
+  padding-top: 17%;
+}
+body main .accessoriesBlock .accessoriesList .ItemNameOut6 {
+  padding-top: 50%;
+}
+body main .accessoriesBlock .accessoriesList .ItemName {
+  display: grid;
+  text-align: center;
+  align-items: center;
+  font-size: 1.25rem;
+  font-family: "Montserrat", "san-serif";
+  font-weight: 400;
+  color: #022279;
+  text-decoration: none;
+}
