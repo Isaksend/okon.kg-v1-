@@ -2,9 +2,9 @@
 @lightGreen: #378D93;
 @lightBlue: #E0F1F2;
 @BasicFont: "Montserrat","san-serif";
-*{
-    border: red 1px solid;
-}
+// *{
+//     border: red 1px solid;
+// }
 body{
     left: 0;
     top: 0;
@@ -14,25 +14,27 @@ body{
     max-width: 100%;
     overflow-x: hidden;
     background-color: @lightBlue;
-    header{
+    header,footer{
         margin: 25px 16.82291%;
-        .logo{
-            display: flex;
-            .logoName{
-                font-family: @BasicFont;
-                padding: 1.25rem .438rem;
-                font-size: 1rem;
-            }
-            .BorderItem{
-                border-left: 1px solid black;
-                height: 60px; 
-                width: 0;
-            }
-            .DescriptLogo{
-                font-size: 1rem;
-                font-family: @BasicFont;
-                padding: .625rem;
-                width: 11rem;
+        .logoBlock {
+            .logo{
+                display: flex;
+                .logoName{
+                    font-family: @BasicFont;
+                    padding: 1.25rem .438rem;
+                    font-size: 1rem;
+                }
+                .BorderItem{
+                    border-left: 1px solid black;
+                    height: 60px; 
+                    width: 0;
+                }
+                .DescriptLogo{
+                    font-size: 1rem;
+                    font-family: @BasicFont;
+                    padding: .625rem;
+                    width: 11rem;
+                }
             }
         }
         .headPart{
@@ -90,8 +92,10 @@ body{
         }
     }
     main{
+        max-width: 100%;
         .frontBlock{
             background-image: url("../asset/background/okonBackground.png");
+            object-fit: cover;
             width: 100%;
             max-width: 100%;
             height: 67.5rem;
@@ -287,31 +291,27 @@ body{
                 font-weight: 600;
             }
             .accessoriesList{
-                margin: 3.125rem 16.82%;
+                padding: 3.125rem 16.82%;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                .downImgItem{
-                    margin-top: 25%;
-                }
-                .ItemNameOut1{
-                    padding-top: 18%;
-                }
-
-                .ItemNameOut2{
-                    padding-top: 16%;
-                }
-                .ItemNameOut3{
-                    padding-top: 35%;
-                }
-                .ItemNameOut4{
-                    padding-top: 19%;
-                }
-                .ItemNameOut5{
-                    padding-top: 17%;
-                }
-                .ItemNameOut6{
-                    padding-top: 50%;
+                .accessoriesItem{
+                    img{
+                        width: 100%;
+                    }
+                    .accessoriesItemNum4{
+                        width: 50%;
+                        object-fit: cover;
+                        margin-left: 25%;
+                        
+                    }
+                    .ItemOutBlock{
+                        height: 14rem;
+                        img{
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
                 }
                 .ItemName{
                     display: grid;
@@ -325,5 +325,98 @@ body{
                 }
             }
         }
+        .topServiceList{
+            margin: 6.25rem 16.82291%;
+            .topBlockName{
+                font-size: 2.25rem;
+                font-family: @BasicFont;
+                font-weight: 600;
+                text-align: center;
+            }
+            .topBlockList{
+                display: flex;
+                flex-direction: column;
+                margin-top: 2.25rem;
+                .topListItem{
+                    display: flex;
+                    font-family: @BasicFont;
+                    padding-bottom: 1.5rem;
+                    .topNum{
+                        vertical-align: middle;
+                        font-size: 2.25rem;
+                        font-weight: 600;
+                    }
+                    .TopItemText{
+                        font-size: 1.25rem;
+                        margin-left: 1.375rem;
+                    }
+                }
+            }
+        }
+        .ourWorksBlock{
+            margin: 6.25rem 16.82291%;
+            .ourWorkTitle{
+                font-family: @BasicFont;
+                color: black;
+                font-size: 2.25rem;
+                text-align: center;
+                font-weight: 600;
+            }
+            .ourWorkList{
+                display: grid;
+                grid-template-columns: 49% 49%; 
+                grid-template-rows: 26.125rem 26.125rem; 
+                grid-column-gap: 2%;
+                grid-row-gap: 2%;
+                margin-top: 3.5rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .reviewsBlock{
+            margin: 6.25rem 16.82291%;
+            .reviewsTitleText{
+                font-size: 2.25rem;
+                font-family: @BasicFont;
+                font-weight: 600;
+                text-align: center;
+                padding-bottom: 6.25rem;
+            }
+            .reviewsListBlock{
+                display: grid;
+                grid-template-columns: 32.55% 32.55% 32.55%;
+                grid-column-gap: 1.175%;               
+                .reviewsItem{
+                    .reviewAuthor{
+                        .authorImg{
+                            display: flex;
+                            justify-content: center;
+                        }
+                        .authorName{
+                            margin-top: 1rem;
+                            font-size: 1.5rem;
+                            font-weight: 600;
+                            text-align: center;
+                            font-family: @BasicFont;
+                        }
+                    }
+                    .authorMessage{
+                        font-size: 1.25rem;
+                        font-family: @BasicFont;
+                        font-weight: 400;
+                        padding: 2rem 1.563rem;
+                        background-color: @lightGreen;
+                        color: white;
+                        border-radius: 1rem;
+                        margin-top: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        max-width: 100%;
     }
 }
