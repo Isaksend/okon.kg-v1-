@@ -813,7 +813,7 @@ body{
                     display: flex;
                     flex-direction: column;
                     .ServiceName{
-                        // font-size: .7rem;
+                        margin-left: .563rem;
                         margin-top: 25%;
                         width: 12rem;
                     }
@@ -821,10 +821,23 @@ body{
                         margin-top: 28%;
                     }
                     
-                    .serviceItemSmall,.mosquitoSlidingNets{
+                    .mosquitoSlidingNets{
                         .ServiceName{
+                            margin-top: 20%;
                             width: 9rem;
                         }
+                    }
+                    .serviceItemSmall{
+                        .ServiceName{
+                            margin-top: 33%;
+                            width: 9rem;
+                        }
+                        .ServiceReadLinkOut{
+                            margin-left: .563rem;
+                        }
+                    }
+                    .serviceItem,.serviceSmallBlock{
+                        height: 10rem;
                     }
                     
                 }
@@ -837,10 +850,29 @@ body{
             }
             .repairBlock{
                 .repairService{
+                    margin-top: 1.5rem;
+                    display: flex;
+                    flex-direction: column;
                     .repairItem{
+                        margin-top: 1rem;
                         .repairText{
-                            font-size: .75rem;
+                            font-size: 1.25rem;
+                            width: 13rem;
+                            padding-bottom: 1rem;
                         }
+                    }
+                }
+            }
+            .topServiceList {
+                margin: 3.25rem 5%;
+            }
+            .ourWorksBlock{
+                .ourWorkList{
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 0.5rem;
+                    img{
+                        margin-top: 1rem;
                     }
                 }
             }
@@ -851,6 +883,9 @@ body{
                     justify-content: space-between;
                 }
             }
+        }
+        footer{
+            margin-top: 0;
         }
     }
 }
