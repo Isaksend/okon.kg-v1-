@@ -15,7 +15,7 @@ body{
     overflow-x: hidden;
     background-color: @lightBlue;
     header,footer{
-        margin: 25px 16.82291%;
+        padding: 25px 16.82291%;
         .logoBlock {
             .logo{
                 display: flex;
@@ -36,9 +36,13 @@ body{
                     width: 11rem;
                 }
             }
+            .burgerMenu{
+                display: none;
+            }
         }
         .headPart{
             display: flex;
+            flex-direction: row;
         }
         .InfoWork{
             margin-left: 7.43%;
@@ -157,7 +161,7 @@ body{
                 margin: 5rem 16.82%;
                 display: grid; 
                 grid-template-columns: 49.25% 49.25%; 
-                grid-template-rows: 300px 300px 300px; 
+                grid-template-rows: 18.75rem 18.75rem 18.75rem; 
                 gap: 1.25rem 1.25rem; 
                 grid-template-areas: 
                     ". ."
@@ -168,7 +172,7 @@ body{
                     background-size: cover;
                     display: flex;
                     justify-content: space-between;
-                    
+                    background-size: 100%;
                 }
                 .serviceItemSmall{
                     display: block;
@@ -418,5 +422,436 @@ body{
     }
     footer{
         max-width: 100%;
+        margin-top: 10rem;
+        background-color: #fff;
+        .contactBlock{
+            width: 22.5rem;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            .contactItem{
+                width: 30%;
+                .LinkItem{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
 }
+
+@media screen and(min-width: 2559px){
+    body{
+        header,footer{
+            .phoneNumber{
+                margin-left: 30%;
+            }
+        }
+        
+        main{
+            .ourServiceBlock{
+                .serviceGroup{
+                    grid-template-rows: 24rem 24rem 24rem;
+                    .serviceSmallBlock{
+                        grid-template-columns: 49% 49%;
+                        gap: 0 2%;
+                    }
+                    .serviceItemSmall{
+                        .ServiceName{
+                            margin-top: 63%;
+                        }
+                    }
+                    
+                }
+            }
+            .accessoriesBlock{
+                .accessoriesList{
+                    .ItemName{
+                        margin-top: 4rem;
+                    }
+                }
+            }
+            .ourWorksBlock{
+                .ourWorkList{
+                    grid-row-gap: 3%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 1681px){
+    body{
+        header,footer{
+            padding: 25px 10%;
+            .phoneNumber{
+                margin-left: 14%;
+            }
+        }
+        main{
+            .frontBlock{
+                .titleBlock{
+                    margin: 0 10%;
+                    width: 45%;
+                }
+            }
+            .ourServiceBlock{
+                .serviceGroup{
+                    margin: 5rem 10%;
+                    grid-template-rows: 20rem 20rem 20rem;
+                }
+            }
+            .repairBlock{
+                margin: 3.125rem 10%;
+            }
+            .accessoriesBlock{
+                .accessoriesList{
+                    padding: 3.125rem 10%;
+                }
+            }
+            .ourWorksBlock{
+                margin: 6.25rem 10%;
+            }
+            .reviewsBlock{
+                margin: 6.25rem 10%;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 1601px){
+    body{
+        header,footer{
+            .phoneNumber{
+                margin-left: 7%;
+            }
+            .btnCallMe{
+                margin-left: 6%;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 1540px){
+    body{
+        header,footer{
+            padding: 25px 7%;
+            .btnCallMe{
+                margin-left: 7.5%;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 1441px){
+    body{
+        header,footer{
+            .phoneNumber{
+                margin-left: 2%;
+            }
+            .btnCallMe{
+                margin-left: 8%;
+            }
+        }
+        main{
+            .frontBlock{
+                height: 50rem;
+            }
+            .ourServiceBlock{
+                .serviceGroup{
+                    grid-template-rows: 17rem 17rem 17rem;
+                    .serviceItemSmall{
+                        .ServiceName{
+                            margin-top: 55%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 1401px){
+    body{
+        header,footer{
+            .InfoWork{
+                margin-left: 5%;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 1367px){
+    body{
+        header,footer{
+            padding: 20px 8%;
+            .phoneNumber{
+                a{
+                    font-size: 1.25rem;
+                }
+            }
+            .btnCallMe{
+                margin-left: 5%;
+            }
+            .MenuNav{
+                padding: 2rem 0;
+            }
+        }
+        main{
+            .frontBlock{
+                height: 40rem;
+                .titleBlock{
+                    margin: 0 8%;
+                    width: 50%;
+                    .descriptionBlock{
+                        margin-top: 1rem;
+                        width: 85%;
+                    }
+
+                }
+            }
+            .ourServiceBlock{
+                .serviceGroup{
+                    margin: 5rem 8%;
+                }
+            }
+            .repairBlock{
+                margin: 3.125rem 8%;
+                .repairService{
+                    .repairItem{
+                        .repairText{
+                            margin-top: 22%;
+                        }
+                    }
+                }
+            }
+            .accessoriesBlock{
+                .accessoriesList{
+                    padding: 3.125rem 8%;
+                }
+            }
+            .ourWorksBlock{
+                margin: 6.125rem 8%;
+            }
+            .reviewsBlock{
+                margin: 6.25rem 8%;
+                .reviewsTitleText{
+                    padding-bottom: 3.25rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 1281px){
+    body{
+        header,footer{
+            padding: 20px 5%;
+            .phoneNumber{
+                margin-left: 5%;
+            }
+        }
+        main{
+            .frontBlock{
+                .titleBlock{
+                    margin: 0 5%;
+                    .callBtn{
+                        width: 15.25rem;
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+            .ourServiceBlock{
+                .serviceGroup{
+                    margin: 5rem 5%;
+                }
+            }
+            .ourWorksBlock{
+                margin: 6.125rem 5%;
+            }
+            .reviewsBlock{
+                margin: 6.25rem 5%;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 1025px){
+    body{
+        header,footer{
+            padding: 20px 3%;
+            .btnCallMe{
+                margin-left: 1%;
+                .btnCall{
+                    padding: 1.25rem 1rem;
+                }
+            }
+            .InfoWork{
+                margin-left: 2%;
+            }
+            .phoneNumber{
+                margin-left: 2%;
+            }
+        }
+        main{
+            .frontBlock{
+                .titleBlock{
+                    margin: 0 3%;
+                }
+            }
+            .ourServiceBlock{
+                .serviceGroup{
+                    margin: 2rem 3%;
+                    grid-template-rows: 14rem 14rem 14rem;
+                    .ServiceName{
+                        font-size: 1.25rem;
+                    }
+                    .ServiceReadLinkOut{
+                        margin-top: 38%;
+                    }
+                    .serviceItemSmall{
+                        .ServiceName{
+                            width: 10rem;
+                        }
+                    }
+
+                }
+                .repairBlock{
+                    margin: 2.125rem 3%;
+                    .repairService{
+                        margin-top: 2rem;
+                    }
+                }
+            }
+            .repairBlock{
+                margin: 2.125rem 3%;
+                .repairService{
+                    grid-template-rows: 250px;
+                    .repairItem{
+                        .repairText{
+                            font-size: 1.75rem;
+                        }
+                    }
+                }
+            }
+            .accessoriesBlock{
+                .accessoriesList{
+                    padding: 2.5rem 3%;
+                }
+            }
+            .topServiceList{
+                margin: 6.25rem 10%;
+            }
+            .ourWorksBlock{
+                margin: 3rem 3%;
+            }
+            .reviewsBlock{
+                margin: 4.25rem 3%;
+                .reviewsListBlock{
+                    .reviewsItem{
+                        .authorMessage{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            .contactBlock{
+                width: 15rem;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 431px){
+    *{
+        border: red 1px solid;
+    }
+    body{
+        header,footer{
+            .headPart{
+                display: grid;
+                .logoBlock{
+                    display: flex;
+                    .burgerMenuOut{
+                        .burgerMenu{
+                            display: block;
+                        }
+                    }
+                }
+            }
+            .MenuNav{
+                display: none;
+            }
+        }
+        main{
+            .frontBlock{
+                .titleBlock{
+                    width: 75%;
+                    .titleText{
+                        font-size: 2rem;
+                    }
+                    .cityName{
+                        padding: 0.5rem 1.5rem;
+                        font-size: 2rem;
+                        max-width: 12rem;
+                    }
+                    .descriptionBlock{
+                        width: 90%;
+                    }
+                    .callBtn {
+                        padding: 1.5rem 2.25rem;
+                        width: 15rem;
+                    }
+                }
+            }
+            .ourServiceBlock{
+                .serviceGroup{
+                    display: flex;
+                    flex-direction: column;
+                    .ServiceName{
+                        // font-size: .7rem;
+                        margin-top: 25%;
+                        width: 12rem;
+                    }
+                    .ServiceReadLinkOut{
+                        margin-top: 28%;
+                    }
+                    
+                    .serviceItemSmall,.mosquitoSlidingNets{
+                        .ServiceName{
+                            width: 9rem;
+                        }
+                    }
+                    
+                }
+            }
+            .accessoriesBlock{
+                .accessoriesList{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            .repairBlock{
+                .repairService{
+                    .repairItem{
+                        .repairText{
+                            font-size: .75rem;
+                        }
+                    }
+                }
+            }
+            .reviewsBlock{
+                .reviewsListBlock{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
+
