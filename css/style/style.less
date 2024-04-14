@@ -14,6 +14,7 @@ body{
     max-width: 100%;
     overflow-x: hidden;
     background-color: @lightBlue;
+
     header,footer{
         padding: 25px 16.82291%;
         .logoBlock {
@@ -91,6 +92,10 @@ body{
                     color: black;
                     font-size: 1.5rem;
                     font-weight: 500;
+                    animation-duration: 300ms;
+                }
+                a:hover{
+                    color: #378D93;
                 }
             }
         }
@@ -767,10 +772,14 @@ body{
 }
 
 @media screen and(max-width: 431px){
-    *{
-        border: red 1px solid;
-    }
     body{
+        header{
+            .logoBlock{
+                .burgerMenuOut{
+                    margin-top: .75rem;
+                }
+            }
+        }
         header,footer{
             .headPart{
                 display: grid;
@@ -863,6 +872,15 @@ body{
                     }
                 }
             }
+            .accessoriesBlock{
+                .accessoriesList{
+                    .accessoriesItem{
+                        .ItemOutBlock{
+                            height: 8rem;
+                        }
+                    }
+                }
+            }
             .topServiceList {
                 margin: 3.25rem 5%;
             }
@@ -877,12 +895,19 @@ body{
                 }
             }
             .reviewsBlock{
+                .reviewsTitleText{
+                    padding-bottom: .25rem;
+                }
                 .reviewsListBlock{
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
+                    .reviewsItem{
+                        margin-top: 1rem;
+                    }
                 }
             }
+            
         }
         footer{
             margin-top: 0;
@@ -890,3 +915,111 @@ body{
     }
 }
 
+@media screen and(max-width: 416px){
+    body{
+        header,footer{
+            padding: 20px 1%;
+        }
+        header{
+            .logoBlock{
+                .burgerMenuOut{
+                    margin-top: .75rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 391px){
+    body{
+        header,footer{
+            padding: 20px 4%;
+        }
+        header{
+            .logoBlock{
+                .logo {  
+                    display: grid;
+                    grid-template-columns: 24% 74%;
+                    grid-template-rows: 1fr 1fr;
+                    gap: 2% 2%;
+                    grid-auto-flow: row;
+                    grid-template-areas:
+                    "logoImg logoName"
+                    "BorderItem DescriptLogo";
+                    .logoImg { grid-area: logoImg; }
+                    .logoName { grid-area: logoName; }
+                    .BorderItem { grid-area: BorderItem;    
+                    }
+                    .DescriptLogo { grid-area: DescriptLogo;
+                        .logoText{
+                        }
+                        margin-left: -35%;
+                    }
+                }
+                .burgerMenuOut{
+                    margin-left: 15%;
+                }
+            } 
+        }
+        main{
+            .frontBlock{
+                .titleBlock{
+                    .callBtn{
+                        padding: 1.5rem 1.25rem;
+                        width: 13rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 376px){
+    body{
+        header{
+            .logoBlock{
+                .burgerMenuOut{
+                    margin-left: 12%;
+                }
+            }
+        }
+        main{
+            .frontBlock{
+                .titleBlock{
+                    .callBtn{
+                        font-size: 1rem;
+                        padding: 1.25rem 1rem;
+                        width: 10.5rem;
+                        margin-top: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 362px){
+    body{
+        header{
+            .logoBlock{
+                .burgerMenuOut{
+                    margin-left: 9%;
+                }
+            }
+        }
+        main{
+            .topServiceList{
+                .topBlockName{
+                    font-size: 1.25rem;
+                }
+                .topBlockList{
+                    .topListItem{
+                        .TopItemText{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

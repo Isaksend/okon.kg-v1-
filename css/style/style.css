@@ -107,6 +107,11 @@ body footer .MenuNav .navItem a {
   color: black;
   font-size: 1.5rem;
   font-weight: 500;
+  animation-duration: 300ms;
+}
+body header .MenuNav .navItem a:hover,
+body footer .MenuNav .navItem a:hover {
+  color: #378D93;
 }
 body main {
   max-width: 100%;
@@ -685,8 +690,8 @@ body footer .contactBlock .contactItem .LinkItem img {
   }
 }
 @media screen and (max-width: 431px) {
-  * {
-    border: red 1px solid;
+  body header .logoBlock .burgerMenuOut {
+    margin-top: .75rem;
   }
   body header .headPart,
   body footer .headPart {
@@ -766,6 +771,9 @@ body footer .contactBlock .contactItem .LinkItem img {
     width: 13rem;
     padding-bottom: 1rem;
   }
+  body main .accessoriesBlock .accessoriesList .accessoriesItem .ItemOutBlock {
+    height: 8rem;
+  }
   body main .topServiceList {
     margin: 3.25rem 5%;
   }
@@ -777,12 +785,83 @@ body footer .contactBlock .contactItem .LinkItem img {
   body main .ourWorksBlock .ourWorkList img {
     margin-top: 1rem;
   }
+  body main .reviewsBlock .reviewsTitleText {
+    padding-bottom: .25rem;
+  }
   body main .reviewsBlock .reviewsListBlock {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
+  body main .reviewsBlock .reviewsListBlock .reviewsItem {
+    margin-top: 1rem;
+  }
   body footer {
     margin-top: 0;
+  }
+}
+@media screen and (max-width: 416px) {
+  body header,
+  body footer {
+    padding: 20px 1%;
+  }
+  body header .logoBlock .burgerMenuOut {
+    margin-top: .75rem;
+  }
+}
+@media screen and (max-width: 391px) {
+  body header,
+  body footer {
+    padding: 20px 4%;
+  }
+  body header .logoBlock .logo {
+    display: grid;
+    grid-template-columns: 24% 74%;
+    grid-template-rows: 1fr 1fr;
+    gap: 2% 2%;
+    grid-auto-flow: row;
+    grid-template-areas: "logoImg logoName" "BorderItem DescriptLogo";
+  }
+  body header .logoBlock .logo .logoImg {
+    grid-area: logoImg;
+  }
+  body header .logoBlock .logo .logoName {
+    grid-area: logoName;
+  }
+  body header .logoBlock .logo .BorderItem {
+    grid-area: BorderItem;
+  }
+  body header .logoBlock .logo .DescriptLogo {
+    grid-area: DescriptLogo;
+    margin-left: -35%;
+  }
+  body header .logoBlock .burgerMenuOut {
+    margin-left: 15%;
+  }
+  body main .frontBlock .titleBlock .callBtn {
+    padding: 1.5rem 1.25rem;
+    width: 13rem;
+  }
+}
+@media screen and (max-width: 376px) {
+  body header .logoBlock .burgerMenuOut {
+    margin-left: 12%;
+  }
+  body main .frontBlock .titleBlock .callBtn {
+    font-size: 1rem;
+    padding: 1.25rem 1rem;
+    width: 10.5rem;
+    margin-top: 1.5rem;
+  }
+}
+@media screen and (max-width: 362px) {
+  body header .logoBlock .burgerMenuOut {
+    margin-left: 9%;
+  }
+  body main .topServiceList .topBlockName {
+    font-size: 1.25rem;
+  }
+  body main .topServiceList .topBlockList .topListItem .TopItemText {
+    font-size: 1rem;
   }
 }
