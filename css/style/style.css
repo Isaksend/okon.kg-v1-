@@ -445,6 +445,149 @@ body footer .contactBlock .contactItem .LinkItem {
 body footer .contactBlock .contactItem .LinkItem img {
   width: 100%;
 }
+
+.hidden{
+  display: none !important;
+}
+#popupWrapper{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3); 
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#popup{
+
+  scale: 86%;
+  font-family: "Inter";
+  font-weight: 300;
+  background-color: white;
+  height: 30rem;
+  width: 35rem;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  border-radius: 1rem;
+}
+
+#closeBtn{
+  background-color: unset;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  position: absolute;
+
+  margin-left:90%;
+  margin-bottom: 52vh;
+
+  scale:86%;
+}
+
+@media(min-width: 1000px){
+  #closeBtn{
+    margin-left: 90% !important;
+  }
+}
+@media(hover:hover){
+#closeBtn:hover{
+  scale: 115%;
+}
+#closeBtn:active{
+  scale:90%;
+}
+
+}
+@media(hover:none){
+  #closeBtn:active{
+    scale:90%;
+  }
+}
+
+
+#popupTitle{
+  font-size: 1.7rem;
+  text-align: center;
+
+}
+#popupForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+  gap: 2rem;
+}
+
+#popupForm > input{
+  background-color: #F6F6F6;
+  border: none;
+  outline: none;
+
+  font-size: 1.2rem;
+
+  width: 23.5rem;
+  height: 3.2rem;
+
+  padding-left: 2%;
+  border-radius: 0.6rem;
+}
+
+@media(max-width: 320px){
+
+  #popupWrapper{
+    width: 120vw;
+    height: 120vh;
+  }
+  
+}
+@media(min-width: 320px){
+#closeBtn{
+    margin-left: 85%;
+  }
+}
+@media(max-width:425px){
+  #popupForm{
+    margin-bottom: 0;
+  }
+  #popupForm >input{
+    width: 83.5vw;
+  }
+  #popupTitle{
+    font-size: 1.5rem !important;
+  }
+}
+
+#sendBtn{
+  background-color: #378D93;
+  border: none;
+  color:white;
+  padding:1rem;
+
+  width: 59%;
+
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+  font-size: 1rem;
+  font-weight: 500;
+
+  font-family: "Montserrat";
+}
+
+
+
 @media screen and (min-width: 2559px) {
   body header .phoneNumber,
   body footer .phoneNumber {

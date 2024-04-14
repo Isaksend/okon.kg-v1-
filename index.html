@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Questrial&display=swap" rel="stylesheet">                        
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Questrial&display=swap" rel="stylesheet">                        
     <title>okon.kg</title>
     <link rel="stylesheet" type="text/css" href="css/style/style.css"/>
 </head>
@@ -80,7 +80,25 @@
     </header>
 
     <main>
-        
+        <div id="popupWrapper" class="hidden">
+
+            <div id="popup">
+
+                <button id="closeBtn" aria-label="close button">
+                    <img src="/css/asset/icons/closeBtn.svg" alt="close button">
+                </button>
+
+
+                <p id="popupTitle">Мы вам позвоним при первой <br>же возможности!</p>
+                <form id="popupForm">
+                    <input id="nameInput" type="text" placeholder="Как вас зовут?" required>
+                    <input id="numberInput" type="number" placeholder="Ваш номер телефона" required>
+                    <button id="sendBtn" type="submit">Отправить</button>
+                </form>
+
+            </div>
+            
+        </div> 
         <div class="frontBlock" id="frontBlock">
             <div class="titleBlock">
                 <div class="titleText">
